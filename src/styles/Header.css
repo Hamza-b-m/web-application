@@ -1,0 +1,549 @@
+header {
+  width: 100%;
+  font-family: "PT Sans";
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header__top {
+  height: 70px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper {
+  width: 1092px;
+  margin: 0 auto;
+}
+
+.header__top > div,
+.header__bottom > ul {
+  height: inherit;
+  display: flex;
+}
+
+.header__logo,
+.header__search,
+.header__magasin,
+.header__configurateur {
+  height: 100%;
+  border-right: 1px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 25%;
+}
+
+.header__search {
+  width: 39%;
+  font-size: 16px;
+  color: #b7b7b7;
+}
+
+.header__magasin {
+  width: 18%;
+  font-size: 14px;
+  color: #4d302b;
+}
+
+.header__configurateur {
+  width: 18%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #7daf3f;
+  transition: 0.3s;
+}
+
+.header__top p {
+  margin-left: 10px;
+}
+
+.header__search > div,
+.header__magasin > div,
+.header__configurateur > div {
+  width: 95%;
+  position: relative;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.search__left,
+.magasin__left,
+.configurateur__left {
+  display: flex;
+  align-items: center;
+}
+
+.search__left img,
+.magasin__left img,
+.configurateur__left img {
+  transition: 0.3s;
+}
+
+.search__left input {
+  margin-left: 10px;
+  font-family: "PT Sans";
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search__right img,
+.magasin__right img,
+.configurateur__right img {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.header__search:hover > div,
+.header__magasin:hover > div,
+.header__configurateur:hover > div {
+  left: 0;
+  transition: 0.3s;
+}
+
+.header__search:hover .search__left img,
+.header__magasin:hover .magasin__left img,
+.header__configurateur:hover .configurateur__left img {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.header__search:hover .search__right img,
+.header__magasin:hover .magasin__right img,
+.header__configurateur:hover .configurateur__right img {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.header__configurateur:hover {
+  background-color: #4d302b;
+  transition: 0.3s;
+}
+
+.header__bottom {
+  height: 50px;
+  background-color: transparent;
+}
+
+.header__bottom > ul {
+  background-color: #ffffff;
+}
+
+.header__bottom li {
+  width: 25%;
+  list-style: none;
+}
+
+.header__bottom > ul > li:first-child {
+  border-right: 1px solid #e2e2e2;
+}
+
+.header__bottom > ul > li:last-child {
+  border-right: 1px solid #e2e2e2;
+}
+
+.header__bottom > ul > li:nth-child(odd) {
+  font-size: 16px;
+  color: #1f1f1f;
+  height: inherit;
+  border-left: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.boutique ul {
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../res/nav-boutique-bg.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 12px 0;
+}
+
+.boutique li {
+  width: inherit;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.boutique__container div {
+  height: 50px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+
+.boutique__container {
+  transform: translateY(-215px);
+  transition: 0.3s;
+}
+
+.header__bottom > ul > li:nth-child(odd):hover {
+  color: #ffffff;
+  background-color: #7daf3f;
+  transition: 0.3s;
+}
+
+.boutique:hover .boutique__container {
+  transform: translateY(0);
+  transition: 0.3s;
+}
+
+.boutique:hover .boutique__container div {
+  color: #ffffff;
+  background-color: #7daf3f;
+  border: none;
+  transition: 0.3s;
+}
+
+.boutique li:hover {
+  background-color: #4d302b;
+  transition: 0.3s;
+}
+
+.contacter form {
+  position: relative;
+  height: 585px;
+  background-color: #ffffff;
+  transform: translateY(-535px);
+  transition: 0.3s;
+}
+
+.contacter form h1 {
+  height: 215px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: normal;
+  background: url(../res/nav-boutique-bg.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacter form p {
+  width: 231px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #4d302b;
+  margin: 28px 21px 12px;
+}
+
+.contacter form input,
+.contacter form textarea {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 8px auto;
+  font-size: 16px;
+  font-family: "PT Sans";
+}
+
+.contacter form input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b7b7b7;
+  padding: 10.5px 0;
+}
+
+.contacter textarea {
+  width: calc(100% - 40px);
+  height: 81px;
+  outline: none;
+  border: 1px solid #b7b7b7;
+  resize: none;
+}
+
+.contacter form label {
+  padding: 10.5;
+  margin: 8px 0 10px 20px;
+}
+
+.contacter form input::placeholder,
+.contacter form textarea::placeholder,
+.contacter form label {
+  color: #b7b7b7;
+}
+
+.contacter div {
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  background-color: #ffffff;
+}
+
+.contacter div span:last-child {
+  display: none;
+}
+
+.contacter:hover form {
+  transform: translateY(0);
+  transition: 0.3s;
+}
+
+.contacter:hover div {
+  border: none;
+  color: #ffffff;
+  background-color: #7daf3f;
+  transition: 0.3s;
+}
+
+.contacter:hover div span:first-child {
+  display: none;
+}
+
+.contacter:hover div span:last-child {
+  display: block;
+}
+
+.left__menu {
+  display: none;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .left__menu {
+    display: none;
+  }
+  .wrapper {
+    width: 700px;
+  }
+  .header__logo img {
+    width: 90%;
+  }
+  .header__search,
+  .header__magasin,
+  .header__configurateur {
+    width: 25%;
+  }
+  .contacter form {
+    height: 515px;
+    transform: translateY(-465px);
+  }
+  .contacter form h1 {
+    height: 150px;
+  }
+  .contacter form p {
+    width: auto;
+    font-size: 12px;
+    margin: 15px 13px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .left__menu {
+    display: block;
+  }
+  .header__bottom,
+  .header__configurateur,
+  .header__magasin {
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .header__top {
+    height: 30px;
+  }
+  .header__logo,
+  .header__search {
+    border: none;
+  }
+  .header__logo {
+    width: initial;
+  }
+  .header__logo img {
+    width: 80px;
+  }
+  .header__search {
+    width: 49%;
+    font-size: 12px;
+  }
+  .header__search > div {
+    width: 80%;
+  }
+  .search__left img,
+  .search__right img {
+    height: 15px;
+  }
+  .search__left input {
+    font-size: 12px;
+    width: 80px;
+  }
+  .MuiTypography-body1 {
+    font-family: "PT Sans" !important;
+    font-size: 14px !important;
+    color: #1f1f1f !important;
+  }
+  .MuiIconButton-root {
+    padding: 3px !important;
+    color: #7daf3f !important;
+  }
+  .MuiList-padding {
+    width: 153px !important;
+  }
+  .MuiCollapse-container {
+    padding-left: 15px !important;
+  }
+  .contact__wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .contact__backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .contact__box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 274px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    z-index: 101;
+    padding: 20px;
+    border-radius: 30px;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+  .contact__box::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .contact__box {
+    animation-name: zoomIn;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  .contact__box form {
+    position: relative;
+    height: 480px;
+    background-color: #ffffff;
+    transition: 0.3s;
+  }
+
+  .contact__box form h1 {
+    height: 140px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: normal;
+    background: url(../res/nav-boutique-bg.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__box form p {
+    width: 210px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #4d302b;
+    margin: 24px 13px 12px;
+    text-align: center;
+  }
+
+  .contact__box form input,
+  .contact__box form textarea {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 8px auto;
+    font-size: 16px;
+    font-family: "PT Sans";
+  }
+
+  .contact__box form input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #b7b7b7;
+    padding: 10.5px 0;
+  }
+
+  .contact__box textarea {
+    width: calc(100% - 40px);
+    height: 81px;
+    outline: none;
+    border: 1px solid #b7b7b7;
+    resize: none;
+  }
+
+  .contact__box form label {
+    padding: 10.5;
+    margin: 8px 0 10px 20px;
+  }
+
+  .contact__box form input::placeholder,
+  .contact__box form textarea::placeholder,
+  .contact__box form label {
+    color: #b7b7b7;
+  }
+
+  .contact__box div {
+    display: block;
+    width: 45%;
+    height: 28px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    background-color: #7daf3f;
+    margin: 20px auto 0;
+    text-align: center;
+    padding: 3px;
+  }
+}

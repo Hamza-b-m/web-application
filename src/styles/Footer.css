@@ -1,0 +1,106 @@
+.footer {
+  width: 100%;
+  background-color: #f8f8f8;
+  font-family: "PT Sans";
+  position: relative;
+}
+
+.footer__line {
+  height: 10px;
+  width: 1092px;
+  background-color: #7daf3f;
+  margin: 0 auto;
+}
+
+.footer__container {
+  height: 307px;
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 40px;
+}
+
+.footer__detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1092px;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  margin: 10px 50px 10px 0;
+}
+
+.footer__lien,
+.footer__contacter,
+.footer__horaires {
+  width: 182px;
+  margin: 10px;
+}
+
+.footer__detail h1 {
+  font-size: 18px;
+  line-height: 23px;
+  color: #1f1f1f;
+  margin-bottom: 29px;
+}
+
+.footer__detail li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6f6c6c;
+  margin: 5px 0;
+}
+
+.list__color__footer {
+  color: #1f1f1f !important;
+}
+
+.footer__horaires ul li:nth-child(4) {
+  font-size: 14px;
+  line-height: 14px;
+  color: #1f1f1f;
+}
+.footer__horaires ul li:nth-child(4) span {
+  font-size: 11px;
+  line-height: 14px;
+  color: #1f1f1f;
+}
+
+.footer__horaires ul li:nth-child(2),
+.footer__horaires ul li:nth-child(3),
+.footer__horaires ul li:nth-child(5) {
+  display: flex;
+  align-items: center;
+}
+
+.footer__horaires ul li:nth-child(2) img,
+.footer__horaires ul li:nth-child(3) img,
+.footer__horaires ul li:nth-child(5) img {
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .footer__line {
+    width: 700px;
+  }
+  .footer__container {
+    height: 280px;
+  }
+  .footer__logo {
+    margin-bottom: 10px;
+  }
+  .footer__lien,
+  .footer__contacter,
+  .footer__horaires {
+    width: 145px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer__line {
+    width: 280px;
+  }
+}
